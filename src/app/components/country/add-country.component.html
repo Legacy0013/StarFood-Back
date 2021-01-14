@@ -1,0 +1,17 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add country</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="countrySequence">Sequence:</label>
+      <input [(ngModel)]="country.countrySequence" placeholder="countrySequence" name="countrySequence" class="form-control" id="countrySequence">
+    </div>
+
+    <div class="form-group">
+      <label for="countryISO">Code ISO:</label>
+      <input [(ngModel)]="country.countryISO" placeholder="countryISO" name="countryISO" class="form-control" id="countryISO">
+    </div>
+
+    <button class="btn btn-success" (click)="createCountry()">Create</button>
+  </form>
+</div>

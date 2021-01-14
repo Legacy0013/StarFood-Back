@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add lang</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="langShortDescription">Sequence:</label>
+      <input [(ngModel)]="lang.langShortDescription" placeholder="langShortDescription" name="langShortDescription" class="form-control" id="langShortDescription">
+    </div>
+
+    <button class="btn btn-success" (click)="createLang()">Create</button>
+  </form>
+</div>

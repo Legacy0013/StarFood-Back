@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add menu</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="menuMain">menuMain:</label>
+      <input [(ngModel)]="menu.menuMain" placeholder="menuMain" name="menuMain" class="form-control" id="menuMain">
+    </div>
+
+    <button class="btn btn-success" (click)="createMenu()">Create</button>
+  </form>
+</div>

@@ -1,0 +1,49 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+  <form>
+    <div class="form-group">
+      <label for="userEmail">Email address:</label>
+      <input type="email" [(ngModel)]="user.userEmail" placeholder="Email" name="userEmail" class="form-control" id="userEmail">
+    </div>
+
+    <div class="form-group">
+      <label for="userFirstname">First Name:</label>
+      <input [(ngModel)]="user.userFirstname" placeholder="First Name" name="userFirstname" class="form-control" id="userFirstname">
+    </div>
+
+    <div class="form-group">
+      <label for="userLastname">Last Name:</label>
+      <input [(ngModel)]="user.userLastname" placeholder="Last name" name="userLastname" class="form-control" id="userLastname">
+    </div>
+
+    <div class="form-group">
+      <label for="userPhone">Phone:</label>
+      <input [(ngModel)]="user.userPhone" placeholder="Phone" name="userPhone" class="form-control" id="userPhone">
+    </div>
+
+    <div class="form-group">
+      <label for="roleId">RoleId:</label>
+      <input [(ngModel)]="user.roleId" placeholder="Role" name="roleId" class="form-control" id="roleId">
+    </div>
+
+<!--    hey-->
+    <div class="form-group">
+      <label for="roulette">Rolette ruche:</label>
+      <select id="roulette" ng-options="role.roleShortDescription as role.roleShortDescription for role in roles track by role.roleId" ng-model="user.roleId"></select>
+<!--      <pre>{{user.role | json}}</pre>-->
+      </div>
+<!--    hey-->
+
+    <div class="form-group">
+      <label for="statusId">Status:</label>
+      <input [(ngModel)]="user.statusId" placeholder="Status" name="statusId" class="form-control" id="statusId">
+    </div>
+
+    <div class="form-group">
+      <label for="userPassword">Password:</label>
+      <input [(ngModel)]="user.userPassword" placeholder="Password" name="userPassword" class="form-control" id="userPassword">
+    </div>
+
+    <button class="btn btn-success" (click)="createUser()">Create</button>
+  </form>
+</div>

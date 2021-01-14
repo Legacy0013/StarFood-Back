@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add category</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="statusId">statusId:</label>
+      <input [(ngModel)]="category.statusId" placeholder="statusId" name="statusId" class="form-control" id="statusId">
+    </div>
+
+    <button class="btn btn-success" (click)="createCategory()">Create</button>
+  </form>
+</div>

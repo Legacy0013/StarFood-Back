@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add stock</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="stockShortDescription">Description:</label>
+      <input [(ngModel)]="stock.stockShortDescription" placeholder="stockShortDescription" name="stockShortDescription" class="form-control" id="stockShortDescription">
+    </div>
+
+    <button class="btn btn-success" (click)="createStock()">Create</button>
+  </form>
+</div>

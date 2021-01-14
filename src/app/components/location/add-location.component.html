@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add location</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="locationShortDescription">Description:</label>
+      <input [(ngModel)]="location.locationShortDescription" placeholder="locationShortDescription" name="locationShortDescription" class="form-control" id="locationShortDescription">
+    </div>
+
+    <button class="btn btn-success" (click)="createLocation()">Create</button>
+  </form>
+</div>

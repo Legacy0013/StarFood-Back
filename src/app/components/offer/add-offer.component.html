@@ -1,0 +1,28 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add offer</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="productId">productId:</label>
+      <input [(ngModel)]="offer.productId" placeholder="productId" name="productId" class="form-control" id="productId">
+    </div>
+
+    <div class="form-group">
+      <label for="productId">offerStartDate:</label>
+      <input [(ngModel)]="offer.offerStartDate" placeholder="offerStartDate" name="offerStartDate" class="form-control" id="offerStartDate">
+    </div>
+
+    <div class="form-group">
+      <label for="productId">offerDiscountedPrice:</label>
+      <input [(ngModel)]="offer.offerDiscountedPrice" placeholder="offerDiscountedPrice" name="offerDiscountedPrice" class="form-control" id="offerDiscountedPrice">
+    </div>
+
+    <div class="form-group">
+      <label for="productId">offerEndDate:</label>
+      <input [(ngModel)]="offer.offerEndDate" placeholder="offerEndDate" name="offerEndDate" class="form-control" id="offerEndDate">
+    </div>
+
+    <button class="btn btn-success" (click)="createOffer()">Create</button>
+  </form>
+</div>
+

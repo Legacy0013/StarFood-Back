@@ -1,0 +1,37 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add order</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="userIdCustomer">userIdCustomer:</label>
+      <input [(ngModel)]="order.userIdCustomer" placeholder="userIdCustomer" name="userIdCustomer" class="form-control" id="userIdCustomer">
+    </div>
+
+    <div class="form-group">
+      <label for="orderWeigth">orderWeigth:</label>
+      <input [(ngModel)]="order.orderWeigth" placeholder="orderWeigth" name="orderWeigth" class="form-control" id="orderWeigth">
+    </div>
+
+    <div class="form-group">
+      <label for="originId">originId:</label>
+      <input [(ngModel)]="order.originId" placeholder="originId" name="originId" class="form-control" id="originId">
+    </div>
+
+    <div class="form-group">
+      <label for="userIdOrigin">userIdOrigin:</label>
+      <input [(ngModel)]="order.userIdOrigin" placeholder="userIdOrigin" name="userIdOrigin" class="form-control" id="userIdOrigin">
+    </div>
+
+    <div class="form-group">
+      <label for="paymentMethodId">paymentMethodId:</label>
+      <input [(ngModel)]="order.paymentMethodId" placeholder="paymentMethodId" name="paymentMethodId" class="form-control" id="paymentMethodId">
+    </div>
+
+    <div class="form-group">
+      <label for="orderStatusId">orderStatusId:</label>
+      <input [(ngModel)]="order.orderStatusId" placeholder="orderStatusId" name="orderStatusId" class="form-control" id="orderStatusId">
+    </div>
+
+    <button class="btn btn-success" (click)="createOrder()">Create</button>
+  </form>
+</div>

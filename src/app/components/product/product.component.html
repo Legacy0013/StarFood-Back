@@ -1,0 +1,67 @@
+<div class="col-md-6">
+  <h2> product Details</h2>
+<span *ngIf="products.length == 0">Pas de produits</span>
+<!--  TODO : reporter ngIf-->
+  <div *ngIf="products.length > 0">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">productId</th>
+      <th>productPrice</th>
+      <th>tvaId</th>
+      <th>statusId</th>
+      <th>tvaId</th>
+      <th>categoryId</th>
+      <th>productTypeId</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td class="hidden">{{product.productId}}</td>
+      <td>{{product.productPrice}}</td>
+      <td>{{product.tvaId}}</td>
+      <td>{{product.statusId}}</td>
+      <td>{{product.categoryId}}</td>
+      <td>{{product.productTypeId}}</td>
+
+
+      <td><button class="btn btn-danger" (click)="deleteProduct(product)"> Delete Product</button></td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+  <span *ngIf="availableProducts.length == 0">Pas de produit disponible</span>
+  <!--  TODO : reporter ngIf-->
+  <div *ngIf="availableProducts.length > 0">
+    <span>Produits disponibles:</span>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">productId</th>
+        <th>productPrice</th>
+        <th>tvaId</th>
+        <th>statusId</th>
+        <th>tvaId</th>
+        <th>categoryId</th>
+        <th>productTypeId</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let availableProduct of availableProducts">
+        <td class="hidden">{{availableProduct.productId}}</td>
+        <td>{{availableProduct.productPrice}}</td>
+        <td>{{availableProduct.tvaId}}</td>
+        <td>{{availableProduct.statusId}}</td>
+        <td>{{availableProduct.categoryId}}</td>
+        <td>{{availableProduct.productTypeId}}</td>
+
+
+        <td><button class="btn btn-danger" (click)="deleteProduct(product)"> Delete Product</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

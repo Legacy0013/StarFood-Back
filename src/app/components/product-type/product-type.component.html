@@ -1,0 +1,20 @@
+<div class="col-md-6">
+  <h2> productType Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>description</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let productType of productTypes">
+      <td class="hidden">{{productType.productTypeId}}</td>
+      <td data-editable="true">{{productType.productTypeShortDescription}}</td>
+      <td><button class="btn btn-danger" (click)="deleteProductType(productType)"> Delete productType</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

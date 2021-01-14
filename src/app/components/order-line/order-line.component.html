@@ -1,0 +1,30 @@
+<div class="col-md-6">
+  <h2> orderLine Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>orderId</th>
+      <th>productId</th>
+      <th>orderLineNumber</th>
+      <th>orderLineQuantity</th>
+      <th>statusId</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let orderLine of orderLines">
+      <td data-editable="true">{{orderLine.orderId}}</td>
+      <td data-editable="true">{{orderLine.productId}}</td>
+      <td data-editable="true">{{orderLine.orderLineNumber}}</td>
+      <td data-editable="true">{{orderLine.orderLineQuantity}}</td>
+      <td data-editable="true">{{orderLine.statusId}}</td>
+      <td><button class="btn btn-danger" (click)="deleteOrderLine(orderLine)"> Delete orderLine</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<p>
+  order-line works!
+</p>

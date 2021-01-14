@@ -1,0 +1,17 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add recipe</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="recipeQuantity">recipeQuantity:</label>
+      <input [(ngModel)]="recipe.recipeQuantity" placeholder="recipeQuantity" name="recipeQuantity" class="form-control" id="recipeQuantity">
+    </div>
+
+    <div class="form-group">
+      <label for="productIdComponent">productIdComponent:</label>
+      <input [(ngModel)]="recipe.productIdComponent" placeholder="productIdComponent" name="productIdComponent" class="form-control" id="productIdComponent">
+    </div>
+
+    <button class="btn btn-success" (click)="createRecipe()">Create</button>
+  </form>
+</div>

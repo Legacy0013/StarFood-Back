@@ -1,0 +1,29 @@
+<div class="col-md-6">
+  <h2> offer Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>productId</th>
+      <th>offerStartDate</th>
+      <th>offerDiscountedPrice</th>
+      <th>offerEndDate</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let offer of offers">
+      <td class="hidden">{{offer.offerId}}</td>
+      <td data-editable="true">{{offer.productId}}</td>
+      <td data-editable="true">{{offer.offerStartDate}}</td>
+      <td data-editable="true">{{offer.offerDiscountedPrice}}</td>
+      <td data-editable="true">{{offer.offerEndDate}}</td>
+      <td><button class="btn btn-danger" (click)="deleteOffer(offer)"> Delete offer</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<p>
+  offer works!
+</p>

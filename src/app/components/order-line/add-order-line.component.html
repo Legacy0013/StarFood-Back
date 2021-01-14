@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add orderLine</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="orderId">orderId:</label>
+      <input [(ngModel)]="orderLine.orderId" placeholder="orderId" name="orderId" class="form-control" id="orderId">
+    </div>
+
+    <div class="form-group">
+      <label for="productId">productId:</label>
+      <input [(ngModel)]="orderLine.productId" placeholder="productId" name="productId" class="form-control" id="productId">
+    </div>
+
+    <div class="form-group">
+      <label for="orderLineNumber">orderLineNumber:</label>
+      <input [(ngModel)]="orderLine.orderLineNumber" placeholder="orderLineNumber" name="orderLineNumber" class="form-control" id="orderLineNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="orderLineQuantity">orderLineQuantity:</label>
+      <input [(ngModel)]="orderLine.orderLineQuantity" placeholder="orderLineQuantity" name="orderLineQuantity" class="form-control" id="orderLineQuantity">
+    </div>
+
+    <div class="form-group">
+      <label for="statusId">statusId:</label>
+      <input [(ngModel)]="orderLine.statusId" placeholder="statusId" name="statusId" class="form-control" id="statusId">
+    </div>
+
+    <button class="btn btn-success" (click)="createOrderLine()">Create</button>
+  </form>
+</div>

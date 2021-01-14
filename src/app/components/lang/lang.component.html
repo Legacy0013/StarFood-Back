@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2> lang Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>sequence</th>
+      <th>iso</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let lang of langs">
+      <td class="hidden">{{lang.langId}}</td>
+      <td>{{lang.langShortDescription}}</td>
+      <td>{{lang.langFlag}}</td>
+      <td><button class="btn btn-danger" (click)="deleteLang(lang)"> Delete Lang</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

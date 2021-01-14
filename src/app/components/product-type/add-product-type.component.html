@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add productType</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="productTypeShortDescription">Description:</label>
+      <input [(ngModel)]="productType.productTypeShortDescription" placeholder="productTypeShortDescription" name="productTypeShortDescription" class="form-control" id="productTypeShortDescription">
+    </div>
+
+    <button class="btn btn-success" (click)="createProductType()">Create</button>
+  </form>
+</div>

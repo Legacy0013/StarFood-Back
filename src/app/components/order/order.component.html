@@ -1,0 +1,33 @@
+<div class="col-md-6">
+  <h2> order Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>userIdCustomer</th>
+      <th>orderWeigth</th>
+      <th>originId</th>
+      <th>userIdOrigin</th>
+      <th>paymentMethodId</th>
+      <th>orderStatusId</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of orders">
+      <td class="hidden">{{order.orderId}}</td>
+      <td data-editable="true">{{order.userIdCustomer}}</td>
+      <td data-editable="true">{{order.orderWeigth}}</td>
+      <td data-editable="true">{{order.originId}}</td>
+      <td data-editable="true">{{order.userIdOrigin}}</td>
+      <td data-editable="true">{{order.paymentMethodId}}</td>
+      <td data-editable="true">{{order.orderStatusId}}</td>
+      <td><button class="btn btn-danger" (click)="deleteOrder(order)"> Delete order</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<p>
+  order works!
+</p>

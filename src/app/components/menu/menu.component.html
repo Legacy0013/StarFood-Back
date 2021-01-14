@@ -1,0 +1,23 @@
+<div class="col-md-6">
+  <h2> menu Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>description</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let menu of menus">
+      <td class="hidden">{{menu.menuId}}</td>
+      <td data-editable="true">{{menu.menuShortDescription}}</td>
+      <td><button class="btn btn-danger" (click)="deleteMenu(menu)"> Delete menu</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<p>
+  menu works!
+</p>

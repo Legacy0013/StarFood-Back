@@ -1,0 +1,30 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add product</h2>
+  <form>
+
+    <div class="form-group">
+      <label for="productPrice">productPrice:</label>
+      <input [(ngModel)]="product.productPrice" placeholder="productPrice" name="productPrice" class="form-control" id="productPrice">
+    </div>
+
+    <div class="form-group">
+      <label for="tvaId">tvaId:</label>
+      <input [(ngModel)]="product.tvaId" placeholder="tvaId" name="tvaId" class="form-control" id="tvaId">
+    </div>
+
+    <div class="form-group">
+      <label for="statusId">statusId:</label>
+      <input [(ngModel)]="product.statusId" placeholder="statusId" name="statusId" class="form-control" id="statusId">
+    </div>
+    <div class="form-group">
+      <label for="categoryId">categoryId:</label>
+      <input [(ngModel)]="product.categoryId" placeholder="categoryId" name="categoryId" class="form-control" id="categoryId">
+    </div>
+    <div class="form-group">
+      <label for="productTypeId">productTypeId:</label>
+      <input [(ngModel)]="product.productTypeId" placeholder="productTypeId" name="productTypeId" class="form-control" id="productTypeId">
+    </div>
+
+    <button class="btn btn-success" (click)="createProduct()">Create</button>
+  </form>
+</div>

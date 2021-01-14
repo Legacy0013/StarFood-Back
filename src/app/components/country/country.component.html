@@ -1,0 +1,22 @@
+<div class="col-md-6">
+  <h2> country Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>sequence</th>
+      <th>iso</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let country of countries">
+      <td class="hidden">{{country.countryId}}</td>
+      <td data-editable="true">{{country.countrySequence}}</td>
+      <td>{{country.countryISO}}</td>
+      <td><button class="btn btn-danger" (click)="deleteCountry(country)"> Delete country</button></td>
+      <td><button class="btn btn-danger" (click)="updateCountry(country)"> Update country</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
